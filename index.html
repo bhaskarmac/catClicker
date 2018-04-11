@@ -4,5 +4,15 @@ Clicks <strong><span id="clickCount"></span></strong>
 <br>
 <br>
 <img src="https://lh3.ggpht.com/nlI91wYNCrjjNy5f-S3CmVehIBM4cprx-JFWOztLk7vFlhYuFR6YnxcT446AvxYg4Ab7M1Fy0twaOCWYcUk=s0#w=640&h=426" alt="" id="imgClick">
+<script>
+  var counter = 0;
+var clickCountSpan = document.querySelector('#clickCount');
+var imgClick = document.querySelector('#imgClick');
+clickCountSpan.innerHTML = counter;
+imgClick.addEventListener('click', function(){
+	counter++;
+	clickCountSpan.innerHTML = counter;
+});
+  </script>
 </body>
 </html>
